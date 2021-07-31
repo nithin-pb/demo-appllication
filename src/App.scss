@@ -1,0 +1,125 @@
+:root {
+  --primary: #ECF8F8;
+  --secondary: #E0F2FF;
+  --fnt-clr-1: #000;
+  --fnt-size-title: 55px;
+  --fnt-size-subtitle: 30px;
+  --fnt-size-para: 16px;
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+#root {
+  height: 100vh;
+  overflow: auto;
+}
+
+html, body, {
+  margin: 0;
+  padding: 0;
+  font-family: "San Francisco";
+  min-height: 100vh;
+}
+
+p, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: var(--fnt-size-title);
+  font-weight: 600;
+}
+
+.sub-title {
+  font-size: var(--fnt-size-subtitle);
+  font-weight: 600;
+}
+
+.para {
+  font-size: var(--fnt-size-para);
+  font-weight: 400;
+}
+
+
+.login {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  background-color: var(--primary);
+
+  .login-wrapper {
+    //background-color: var(--secondary);
+    display: flex;
+    height: 380px;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px 2px #a9a9a96b;
+    background: white;
+    padding: 24px;
+
+    .title {
+      font-size: 24px;
+    }
+
+    form {
+      //box-shadow: 0 0 7px 5px #9090908c;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: -webkit-fill-available;
+      gap: 20px;
+
+      label {
+        color: #a1a1a1;
+        font-weight: 600;
+      }
+
+      .error {
+        color: red;
+        text-align: center;
+      }
+
+      input {
+        margin-top: 8px;
+        //height: 40px;
+        width: -webkit-fill-available;
+        border: 1px solid #c9c9c9;
+        border-radius: 4px;
+        padding: 15px 15px;
+        font-size: 14px;
+        font-weight: 500;
+        color: grey;
+        outline: none;
+
+        &[type="submit"] {
+          margin-top: 10px;
+          cursor: pointer;
+          height: 45px;
+          font-size: 16px;
+          border: navajowhite;
+          border-radius: 19px;
+          background: #4c8484;
+          color: white;
+
+          &:hover {
+            background: #356565;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.w-100 {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}

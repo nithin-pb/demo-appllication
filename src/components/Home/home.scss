@@ -1,0 +1,40 @@
+.home-wrapper {
+  height: 100%;
+  overflow: auto;
+  background-color: var(--primary);
+
+  .header {
+    height: 60px;
+    background-color: var(--secondary);
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+    }
+  }
+}
+
+
+.stock-wrapper {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top:3%;
+
+
+  .heading-container {
+    max-width: 600px;
+    text-align: center;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  p {
+    width: 80%;
+    margin: auto;
+  }
+}
