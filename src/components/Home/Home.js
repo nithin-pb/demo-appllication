@@ -36,7 +36,7 @@ function Stock() {
                 <h1 className={"title"}>
                     The Easiest way to buy and sell stocks
                 </h1>
-                <p className={"para"}>
+                <p className={"para subheading"}>
                     Stock analysis and screening tool for investors in india
                 </p>
             </div>
